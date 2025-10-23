@@ -16,14 +16,14 @@ In order to install ROOT, you need all the dependencies, so go to:
 
 and install:
 
-```bash
+```console
 sudo apt install binutils cmake dpkg-dev g++ gcc libssl-dev git libx11-dev \
 libxext-dev libxft-dev libxpm-dev python3 libtbb-dev libvdt-dev libgif-dev
 ```
 
 then the (optional) packages:
 
-```ruby
+```bash
 sudo apt install gfortran libpcre3-dev \
 libglu1-mesa-dev libglew-dev libftgl-dev \
 libfftw3-dev libcfitsio-dev libgraphviz-dev \
