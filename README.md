@@ -16,7 +16,7 @@ In order to install ROOT, you need all the dependencies, so go to:
 
 and install:
 
-```console
+```bash
 sudo apt install binutils cmake dpkg-dev g++ gcc libssl-dev git libx11-dev \
 libxext-dev libxft-dev libxpm-dev python3 libtbb-dev libvdt-dev libgif-dev
 ```
@@ -34,45 +34,72 @@ libgl2ps-dev \
 liblzma-dev libxxhash-dev liblz4-dev libzstd-dev
 ```
 
-- Download the source code [Building ROOT from source - ROOT](https://root.cern.ch/install/build_from_source/)
+Then follow the next steps to download the source code (ref. [Building ROOT from source - ROOT](https://root.cern.ch/install/build_from_source/))
 
-Create a main folder, I created `mkdir root_home`.
-Move inside it and git clone the source code with:
+- create a main folder, I created`root_home`:
 
+```bash
+mkdir root_home
 ```
+
+- move inside it:
+
+```bash
+cd root_home
+```
+
+- git clone the source code:
+
+```bash
 git clone --branch latest-stable --depth=1 https://github.com/root-project/root.git root_src
 ```
 
-- Inside `root_home` create a build and install directories, I named `root_build` and `root_install`, respectively.
+Inside `root_home`,
 
-Then move into `root_build` and execute the `cmake` command on the shell:
+- create a build and install directories, I named `root_build` and `root_install`, respectively:
 
+```bash
+mkdir root_build root_install
 ```
-cmake -DCMAKE_INSTALL_PREFIX=~/root_home/root_install ~/root_home/root_src 
+
+- move into `root_build`:
+
+```bash
+cd root_build
 ```
 
-- Build the programme, you can specify the number `N` of threads with the option `-jN`. (You should be connected to internet to build it).
+- execute the `cmake` command on the shell:
 
+```bash
+cmake -DCMAKE_INSTALL_PREFIX=~/root_home/root_install ~/root_home/root_src
 ```
+
+Build the programme, you can specify the number `N` of threads with the option `-jN`. (You should be connected to internet while building it)
+
+```bash
 cmake --build . --target install -j4
 ```
 
 Then move to `~/root_home/root_install/bin` and from here write the following in the `.bashrc` file, to source ROOT setup automatically at each login
 
+```bash
+cd ~/root_home/root_install/bin
 ```
+
+```bash
 echo ". ~/root_home/root_install/bin/thisroot.sh" >> ~/.bashrc
 ```
 
-- Close your terminal and open a new one
-- Test ROOT
+- close your terminal and open a new one
+- test ROOT
 
-```
+```bash
 root
 ```
 
 should give you an output like this:
 
-```
+```bash
 jamal@giulio-pc:~$ root
    ------------------------------------------------------------------
   | Welcome to ROOT 6.36.04                        https://root.cern |
