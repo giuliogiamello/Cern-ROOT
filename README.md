@@ -52,7 +52,7 @@ cmake -DCMAKE_INSTALL_PREFIX=~/root_home/root_install ~/root_home/root_src
 cmake --build . --target install -j4
 ```
 
-Then move to `~/root_home/root_install/bin` and from here write te following in the `.bashrc` file, to source ROOT setup automatically at each login
+Then move to `~/root_home/root_install/bin` and from here write the following in the `.bashrc` file, to source ROOT setup automatically at each login
 
 ```
 echo ". ~/root_home/root_install/bin/thisroot.sh" >> ~/.bashrc
