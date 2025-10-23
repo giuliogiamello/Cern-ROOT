@@ -4,7 +4,7 @@
 
 Today is `2025/10/08`
 
-> [! Caution]
+> [!CAUTION]
 > I wrote this guide for myself, so for my laptop `Ubuntu 24.04.3 LTS`.
 > If you do not have a Debian based distro, install the required dependencies for your machine and **not** the one below!
 > Then you can follow the guide from `Download the source code` part.
