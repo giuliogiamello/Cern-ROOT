@@ -4,6 +4,11 @@
 
 Today is `2025/10/08`
 
+> [! Caution]
+> I wrote this guide for myself, so for my laptop `Ubuntu 24.04.3 LTS`.
+> If you do not have a Debian based distro, install the required dependencies for your machine and **not** the one below!
+> Then you can follow the guide from `Download the source code` part.
+
 In order to install ROOT, you need all the dependencies, so go to:
 
 - [Dependencies - ROOT](https://root.cern.ch/install/dependencies/)
@@ -11,14 +16,14 @@ In order to install ROOT, you need all the dependencies, so go to:
 
 and install:
 
-```
+```bash
 sudo apt install binutils cmake dpkg-dev g++ gcc libssl-dev git libx11-dev \
 libxext-dev libxft-dev libxpm-dev python3 libtbb-dev libvdt-dev libgif-dev
 ```
 
 then the (optional) packages:
 
-```
+```bash fold
 sudo apt install gfortran libpcre3-dev \
 libglu1-mesa-dev libglew-dev libftgl-dev \
 libfftw3-dev libcfitsio-dev libgraphviz-dev \
