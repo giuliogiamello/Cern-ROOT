@@ -35,7 +35,7 @@ Create a main folder, I created `mkdir root_home`.
 Move inside it and git clone the source code with:
 
 ```
-$ git clone --branch latest-stable --depth=1 https://github.com/root-project/root.git root_src
+git clone --branch latest-stable --depth=1 https://github.com/root-project/root.git root_src
 ```
 
 - Inside `root_home` create a build and install directories, I named `root_build` and `root_install`, respectively.
