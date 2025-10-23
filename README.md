@@ -34,7 +34,7 @@ libgl2ps-dev \
 liblzma-dev libxxhash-dev liblz4-dev libzstd-dev
 ```
 
-Then follow the next steps to download the source code (ref. [Building ROOT from source - ROOT](https://root.cern.ch/install/build_from_source/))
+Follow the next steps to download the source code (ref. [Building ROOT from source - ROOT](https://root.cern.ch/install/build_from_source/))
 
 - create a main folder, I created`root_home`:
 
