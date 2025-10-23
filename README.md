@@ -5,8 +5,8 @@
 Today is `2025/10/08`
 
 > [!CAUTION]
-> I wrote this guide for myself, so for my laptop with `Ubuntu 24.04.3 LTS`.
-> If you do not have a Debian based distro, install the required dependencies for your machine and **not** the one below!
+> I wrote this guide for myself, so for my laptop with `Ubuntu 24.04.3 LTS`. </br>
+> If you do not have a Debian based distro, install the required dependencies for your machine and **not** the one below! </br>
 > Then you can follow the guide from `Download the source code` part.
 
 In order to install ROOT, you need all the dependencies, so go to:
