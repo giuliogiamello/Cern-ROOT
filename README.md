@@ -23,7 +23,7 @@ libxext-dev libxft-dev libxpm-dev python3 libtbb-dev libvdt-dev libgif-dev
 
 then the (optional) packages:
 
-```bash fold
+```ruby
 sudo apt install gfortran libpcre3-dev \
 libglu1-mesa-dev libglew-dev libftgl-dev \
 libfftw3-dev libcfitsio-dev libgraphviz-dev \
